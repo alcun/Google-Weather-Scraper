@@ -6,8 +6,8 @@ s= HTMLSession()
 '''f string lets us put what ever is in query into variable'''
 
 
-query = 'liverpool'
-url = f'https://www.google.com/search?q=weather+liverpool{query}'
+query = 'chicago'
+url = f'https://www.google.com/search?q=weather+{query}'
 
 
 
@@ -24,7 +24,7 @@ unit = (r.html.find('div.vk_bk.wob-unit span.wob_t', first=True).text)
 '''finds chained together to search with larger div'''
 
 
-print(r.html.find('div.VQF4g', first=True).find('span#wob_dc', first=True).text)
+desc = (r.html.find('div.VQF4g', first=True).find('span#wob_dc', first=True).text)
 
 
 
