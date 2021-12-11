@@ -3,7 +3,8 @@ Using python to scrape and display weather data for queried location from google
 Change the 'query value' for different results.
 
 CURRENT VERSION:
-Works as intended, displaying queried location, temp, unit and desc
+Works as intended in cmd terminal after pip install html_requests - 
+ displays queried location, temp, unit and desc
 
 TO DO:
 I could add:
