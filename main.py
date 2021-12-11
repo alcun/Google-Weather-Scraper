@@ -16,3 +16,8 @@ r = s.get(url, headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x6
 
 
 print (r.html.find('title'))
+
+
+
+
+'''so far this should return Element 'title' '''
