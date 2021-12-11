@@ -18,14 +18,31 @@ r = s.get(url, headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x6
 temp = (r.html.find('span#wob_tm', first=True).text)
 
 
-print(r.html.find('div.vk_bk.wob-unit span.wob_t', first=True).text)
+unit = (r.html.find('div.vk_bk.wob-unit span.wob_t', first=True).text)
 
 
+'''finds chained together to search with larger div'''
 
-'''so far this should return Element 'title' '''
+
+print(r.html.find('div.VQF4g', first=True).find('span#wob_dc', first=True).text)
+
 
 
 '''element names'''
+
+''' text description -
+<div class="wob_dcp" id="wob_dcp"><span id="wob_dc">Partly cloudy</span></div>
+
+'''
+
+''' div id for element (with also time and location)
+<div class="VQF4g"><span aria-level="3" role="heading"><div class="wob_loc q8U8x" id="wob_loc">Liverpool, UK</div><div class="wob_dts" id="wob_dts">Saturday 03:00</div><div class="wob_dcp" id="wob_dcp"><span id="wob_dc">Partly cloudy</span></div></span></div>'''
+
+
+
+
+
+
 ''' element of temp number:
 <span class="wob_t q8U8x" id="wob_tm" style="display:inline">6</span>'''
 
