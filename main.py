@@ -6,7 +6,8 @@ s= HTMLSession()
 '''f string lets us put what ever is in query into variable'''
 
 
-query = 'Chicago'
+query = input("Where would you like weather data for? ")
+
 url = f'https://www.google.com/search?q=weather+{query}'
 
 
